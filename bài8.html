@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List Style Position</title>
+    <style type="text/css">
+        ul {
+            width: 250px;
+        }
+        li {
+            margin: 10px;
+        }
+        ul.illuminations {
+            list-style-position: outside; /*xác định các mục nằm ngoài nội dung,đây là dạng mặc định*/
+        }
+        ul.season {
+            list-style-position: inside;/*xác định các mục nằm trong nội dung*/
+        }
+    </style>
+</head>
+<body>
+<h3>Illuminations</h3>
+<ul class="illuminations">
+    <li>That idol, black eyes and yellow mop, without parents or court ...</li>
+    <li>Gracious son of Pan! Around your forehead crowned with flowerets ...</li>
+    <li>When the world is reduced to a single dark wood for our four ...</li>
+</ul>
+<h3>A Season in Hell</h3>
+<ul class="season">
+    <li>Once, if my memory serves me well, my life was a banquet ...</li>
+    <li>Hadn't I once a youth that was lovely, heroic, fabulous ...</li>
+    <li>Autumn already! - But why regret the everlasting sun if we are ...</li>
+</ul>
+</body>
+</html>

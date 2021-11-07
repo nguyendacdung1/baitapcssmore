@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Styling Fieldsets and Legends</title>
+    <style type="text/css">
+        * {
+            font-family: Arial, Verdana, sans-serif;
+            color: #665544;
+        }
+        input {
+            border-bottom: 1px dotted #dcdcdc;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            padding: 5px;
+            width: 280px;
+            margin-bottom: 20px;
+        }
+        input:focus {
+            border: 1px dotted #dcdcdc;
+            outline: none;
+        }
+        input#submit {
+            color: #ffffff;
+            background-color: #00CC33;
+            border: none;
+            border-radius: 5px;
+            width: 85px;
+            text-transform: uppercase;
+        }
+        input#submit:hover {
+            color: #665544;
+            background-color: #efefef;
+        }
+        fieldset {
+            width: 350px;
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: right;
+        }
+        legend {
+            background-color: #efefef;
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <fieldset> <! thường là con của thẻ form nó dùng để nhóm các phần tử >
+        <legend>Newsletter</legend> <! tên của fieldset>
+
+        <label for="name">Name: </label> <!  nội dung con trong fieldset>
+        <input type="text" id="name" />
+
+        <label for="password">Pass: </label>
+        <input type="password" id="password"/>
+
+        <label for="email">Email: </label>
+        <input type="text" id="email" />
+
+        <input type="submit" value="Subscribe" id="submit" />
+    </fieldset>
+</form>
+</body>
+</html>
